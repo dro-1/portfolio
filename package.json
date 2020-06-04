@@ -1,0 +1,17 @@
+{
+  "name": "dro",
+  "version": "1.0.0",
+  "description": "Dro's Portfolio Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dro",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^1.4.6"
+  }
+}
