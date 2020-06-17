@@ -8,3 +8,14 @@ hamButton.addEventListener('click',()=>{
 cancelButton.addEventListener('click',()=>{
   menu.classList.remove('display')
 })
+
+
+$(document).ready(function(){
+  $('.project-btn').click(function(event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $('.projects').offset().top-40
+      }, 800);
+  });
+});
+

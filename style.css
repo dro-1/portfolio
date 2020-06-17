@@ -6,6 +6,9 @@ html, body {
   font-size: 10px;
   font-family: Raleway; }
 
+.container {
+  transition: all 2s ease-in-out; }
+
 .navigation .mobile-nav {
   position: relative; }
   .navigation .mobile-nav .menu-btn {
@@ -19,6 +22,7 @@ html, body {
       height: 3rem;
       width: 3rem; }
   .navigation .mobile-nav .menu {
+    z-index: 1;
     visibility: hidden;
     opacity: 0;
     display: flex;
@@ -31,7 +35,7 @@ html, body {
     width: 50%;
     height: 40vh;
     flex-wrap: wrap;
-    background-color: #4b4949;
+    background-color: #615d5d;
     border-bottom-left-radius: 2rem;
     justify-content: space-around;
     list-style-type: none; }
@@ -71,13 +75,13 @@ html, body {
     width: 100%;
     height: 100vh;
     z-index: -1;
-    transform: translate(4rem, 6rem) scale(1.2);
     transition: all 4s ease-in-out; }
   .hero .text {
     color: white;
     position: absolute;
-    bottom: 0;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
     padding: 4rem; }
     .hero .text h1 {
       font-size: 7rem; }
@@ -86,3 +90,43 @@ html, body {
       line-height: 4.5rem; }
       .hero .text p span {
         display: block; }
+    .hero .text a {
+      display: inline-block;
+      background-color: #eb9412;
+      border: none;
+      padding: 1rem 2rem;
+      margin-top: 3rem;
+      border-radius: 1rem;
+      font-family: Raleway;
+      font-size: 2rem; }
+
+.projects {
+  margin: 4rem 0;
+  min-height: 100vh; }
+  .projects h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: black;
+    text-decoration: none;
+    border: none; }
+  .projects .project {
+    width: 85%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.6); }
+    .projects .project img {
+      width: 100%;
+      height: 20rem; }
+    .projects .project .links {
+      width: 25%;
+      margin: 1rem auto;
+      display: flex;
+      justify-content: space-between; }
+      .projects .project .links a img {
+        width: 3rem;
+        height: 3rem; }
+    .projects .project p {
+      font-size: 2rem; }
