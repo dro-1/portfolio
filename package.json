@@ -1,17 +1,22 @@
 {
-  "name": "dro",
+  "name": "dro-website",
   "version": "1.0.0",
-  "description": "Dro's Portfolio Website",
+  "description": "Dro's portfolio website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node-sass styles.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dro-1/portfolio.git"
   },
   "author": "Dro",
   "license": "ISC",
-  "dependencies": {
-    "live-server": "^1.2.1"
+  "bugs": {
+    "url": "https://github.com/dro-1/portfolio/issues"
   },
-  "devDependencies": {
-    "tailwindcss": "^1.4.6"
+  "homepage": "https://github.com/dro-1/portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
   }
 }

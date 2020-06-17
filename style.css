@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-size: 10px;
+  font-family: Raleway; }
+
+.navigation .mobile-nav {
+  position: relative; }
+  .navigation .mobile-nav .menu-btn {
+    position: absolute;
+    padding: 1rem;
+    right: 0;
+    border-left: solid 1px #d8d6d6;
+    border-bottom: solid 1px #d8d6d6;
+    border-bottom-left-radius: 50%; }
+    .navigation .mobile-nav .menu-btn img {
+      height: 3rem;
+      width: 3rem; }
+  .navigation .mobile-nav .menu {
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 2rem;
+    transition: all .3s;
+    transform: translateX(100%);
+    align-content: space-between;
+    width: 50%;
+    height: 40vh;
+    flex-wrap: wrap;
+    background-color: #4b4949;
+    border-bottom-left-radius: 2rem;
+    justify-content: space-around;
+    list-style-type: none; }
+    .navigation .mobile-nav .menu.display {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0); }
+    .navigation .mobile-nav .menu .cancel {
+      width: 1.7rem;
+      height: 1.7rem;
+      position: absolute;
+      right: 2rem; }
+    .navigation .mobile-nav .menu li {
+      font-size: 2rem;
+      width: 100%;
+      margin: 1rem;
+      text-align: center; }
+      .navigation .mobile-nav .menu li:nth-child(2) {
+        margin-top: 4rem; }
+      .navigation .mobile-nav .menu li a {
+        color: white;
+        text-decoration: none; }
+      .navigation .mobile-nav .menu li:nth-child(3) span {
+        color: #f18e0b; }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; }
+  .hero .bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("img/pt4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    transform: translate(4rem, 6rem) scale(1.2);
+    transition: all 4s ease-in-out; }
+  .hero .text {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4rem; }
+    .hero .text h1 {
+      font-size: 7rem; }
+    .hero .text p {
+      font-size: 4rem;
+      line-height: 4.5rem; }
+      .hero .text p span {
+        display: block; }
