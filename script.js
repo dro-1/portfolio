@@ -14,8 +14,8 @@ $(document).ready(function(){
   $('.project-btn').click(function(event) {
       event.preventDefault();
       $('html, body').animate({
-        scrollTop: $('.projects').offset().top-40
-      }, 800);
+        scrollTop: $('.projects').offset().top
+      }, 1500);
   });
 });
 
