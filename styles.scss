@@ -2,52 +2,147 @@
   margin: 0;
   padding: 0;
 }
+
 html,
 body {
   font-size: 10px;
   font-family: Raleway;
+  overflow-x: hidden;
 }
+
 h1,
 h2,
 h3 {
   font-family: Galada;
 }
-.container {
+
+.inner-wrapper {
   background-color: #f7f7f7;
+  min-height: 100vh;
   overflow: hidden;
+  position: relative;
 }
-.header {
-  .menu-btn {
-    position: absolute;
-    padding: 1rem;
-    top: 0;
-    right: 0;
-    border-left: solid 1px rgb(216, 214, 214);
-    border-bottom: solid 1px rgb(216, 214, 214);
-    border-bottom-left-radius: 50%;
-    img {
-      height: 3rem;
-      width: 3rem;
+
+div.overlay {
+  position: fixed;
+  top: 90vh;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(15, 14, 14);
+  z-index: 10;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  z-index: 15;
+
+  path {
+    &:nth-child(1) {
+      stroke-dasharray: 468.4724426269531px;
+      stroke-dashoffset: 468.4724426269531px;
+    }
+
+    &:nth-child(2) {
+      stroke-dasharray: 322.2749px;
+      stroke-dashoffset: 322.2749px;
+    }
+
+    &:nth-child(3) {
+      stroke-dasharray: 451.845px;
+      stroke-dashoffset: 451.845px;
+    }
+
+    &:nth-child(4) {
+      stroke-dasharray: 348.4645px;
+      stroke-dashoffset: 348.4645px;
+    }
+
+    &:nth-child(5) {
+      stroke-dasharray: 536.7327px;
+      stroke-dashoffset: 536.7327px;
+    }
+
+    &:nth-child(6) {
+      stroke-dasharray: 415.5499px;
+      stroke-dashoffset: 415.5499px;
+    }
+
+    &:nth-child(7) {
+      stroke-dasharray: 416.0725px;
+      stroke-dashoffset: 416.0725px;
+    }
+
+    &:nth-child(8) {
+      stroke-dasharray: 436.2699px;
+      stroke-dashoffset: 436.2699px;
+    }
+
+    &:nth-child(9) {
+      stroke-dasharray: 468.4724426269531px;
+      stroke-dashoffset: 468.4724426269531px;
     }
   }
-  .logo {
-    img {
-      width: 12rem;
-      margin: 1rem auto 0;
-      display: block;
-    }
+}
+
+ul.overlay-box {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  list-style-type: none;
+
+  li {
+    transform: scaleY(0);
+    background: #fff;
+    width: 20%;
   }
 }
+
+.menu-btn {
+  position: absolute;
+  padding: 1rem;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+
+
 .navigation {
   .mobile-nav {
     position: relative;
+
     .menu {
       &.display {
         visibility: visible;
         opacity: 1;
         transform: translate(0, 0);
       }
-      z-index: 1;
+
+      z-index: 2;
       visibility: hidden;
       opacity: 0;
       display: flex;
@@ -64,24 +159,29 @@ h3 {
       border-bottom-left-radius: 2rem;
       justify-content: space-around;
       list-style-type: none;
+
       .cancel {
         width: 1.7rem;
         height: 1.7rem;
         position: absolute;
         right: 2rem;
       }
+
       li {
         &:nth-child(2) {
           margin-top: 4rem;
         }
+
         font-size: 2rem;
         width: 100%;
         margin: 1rem;
         text-align: center;
+
         a {
           color: white;
           text-decoration: none;
         }
+
         &:nth-child(3) {
           span {
             color: rgb(241, 142, 11);
@@ -91,23 +191,23 @@ h3 {
     }
   }
 }
-.hero {
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
+
+.container {
   .my-image {
     padding-top: 5rem;
     display: inline-block;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    & > img {
+
+    &>img {
       width: 20rem;
       height: 20rem;
       border-radius: 50%;
     }
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 5rem;
       left: -2rem;
@@ -119,8 +219,9 @@ h3 {
       animation: beforeAnimation 1s infinite;
       animation-direction: alternate;
     }
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 5rem;
       right: -2rem;
@@ -132,45 +233,56 @@ h3 {
       animation: afterAnimation 1s infinite;
       animation-direction: alternate;
     }
+
     @keyframes beforeAnimation {
       from {
         left: -2rem;
       }
+
       to {
         left: 2rem;
       }
     }
+
     @keyframes afterAnimation {
       from {
         right: -2rem;
       }
+
       to {
         right: 2rem;
       }
     }
   }
+
   .socials {
     width: 130px;
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
+
     img {
       width: 3rem;
     }
   }
+
   .text {
     color: #111111;
     padding: 4rem;
+
     h1 {
       font-size: 3.5rem;
     }
+
     p {
       font-size: 2rem;
+
       span {
         font-weight: bolder;
       }
     }
-    & > a {
+
+    &>a {
       display: inline-block;
       background-color: #222;
       color: #fff;
@@ -180,21 +292,27 @@ h3 {
       border-radius: 1rem;
       font-family: Raleway;
       font-size: 2rem;
+      text-decoration: none;
     }
   }
 }
+
 .projects {
   padding-top: 4rem;
-  min-height: 100vh;
-  background-color: #ebebeb;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(8, 8, 8);
+
   h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-align: center;
     margin-bottom: 4rem;
-    color: #52489c;
+    color: #E0DEDB;
+    font-family: Poppins;
     text-decoration: none;
     border: none;
   }
+
   .project {
     width: 80%;
     margin: 2rem auto 4rem;
@@ -203,15 +321,18 @@ h3 {
     position: relative;
     background-color: #b2abe0;
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
-    & > img {
+
+    &>img {
       width: 100%;
       height: 20rem;
     }
+
     .links {
       width: 25%;
       margin: 1rem auto;
       display: flex;
       justify-content: space-between;
+
       a {
         img {
           width: 3rem;
@@ -219,16 +340,19 @@ h3 {
         }
       }
     }
+
     p {
       font-size: 2rem;
     }
   }
 }
+
 .about {
   position: relative;
+
   .profile-image {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(88, 120, 189, 0.6)),
-      url('./img/dro1.jpeg');
+      url("./img/dro1.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -238,7 +362,9 @@ h3 {
     height: 100%;
     z-index: -1;
   }
+
   padding: 2rem;
+
   h1 {
     color: #000;
     text-align: center;
@@ -246,12 +372,14 @@ h3 {
     margin-bottom: 3rem;
     font-weight: bolder;
   }
+
   article {
     h2 {
       color: white;
       font-size: 3rem;
       margin-bottom: 2rem;
     }
+
     p {
       font-size: 2rem;
     }
