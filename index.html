@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Raleway|Poppins|Nunito"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>theDro😉</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
-  <link rel="manifest" href="assets/site.webmanifest" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway|Poppins|Nunito" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>theDro😉</title>
-</head>
-
-<body>
-  <div class="inner-wrapper">
-    <!-- <nav class="navigation">
+  <body>
+    <div class="inner-wrapper">
+      <!-- <nav class="navigation">
         <div class="mobile-nav">
           <ul class="menu">
             <img class="cancel" src="./svg/cancel.svg" alt="exit" />
@@ -30,19 +47,165 @@
         <img src="./svg/menu.svg" alt="menu" />
       </div> -->
 
-    <main>
-      <div class="container">
-        <div class="my-image">
-          <img src="./img/seun2.jpg" alt="Seun's Picture" />
+      <main>
+        <div class="container">
+          <div class="my-image">
+            <img src="./img/seun2.jpg" alt="Seun's Picture" />
+          </div>
+
+          <div class="text">
+            <h1>Hello There 🖐</h1>
+            <p id="mainText"></p>
+            <div class="socials">
+              <a href="https://twitter.com/the_dro_">
+                <img src="./svg/twitter.svg" />
+              </a>
+              <a href="https://github.com/dro-1">
+                <img src="./svg/github.svg" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/oluwaseunbabara-taiwo-53731314a"
+              >
+                <img src="./svg/linkedin.svg" />
+              </a>
+            </div>
+            <button class="project-btn">See My Projects</button>
+          </div>
+        </div>
+      </main>
+
+      <section id="project" class="projects">
+        <div
+          id="project1"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/fr.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">Face Recog</p>
+            <div class="links">
+              <a href="https://github.com/dro-1/FaceRecog" class="link">
+                <img src="./svg/github.svg" alt="GitHub Link" />
+              </a>
+              <a href="http://face-recog-1.herokuapp.com/" class="link">
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <p>
+              Skills: HTML5, CSS3, Javascript, React, Node, Express, PostgreSQL,
+              Heroku
+            </p>
+          </div>
+        </div>
+        <div
+          id="project2"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/trunc.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">URL Shortener</p>
+            <div class="links">
+              <a href="https://github.com/dro-1/URL-Shortener" class="link">
+                <img src="./svg/github.svg" alt="GitHub Link" />
+              </a>
+              <a href="http://www.trunc.live" class="link">
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <p>Skills: HTML5, CSS3, Javascript, Node, Express, MongoDB</p>
+          </div>
         </div>
 
-        <div class="text">
-          <h1>Hello There 🖐</h1>
+        <div
+          id="project3"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/trans4mers.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">Trans4mers</p>
+            <div class="links">
+              <a href="https://github.com/dro-1/trans4mers" class="link">
+                <img src="./svg/github.svg" alt="GitHub Link" />
+              </a>
+              <a href="https://trans4mers.netlify.app/" class="link">
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <p>Skills: HTML5, CSS3, Javascript, React</p>
+          </div>
+        </div>
+
+        <div
+          id="project4"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/bg.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">Gradient Generator</p>
+            <div class="links">
+              <a
+                href="https://github.com/dro-1/dro-1.github.io/tree/master/Gradient_Background"
+                class="link"
+              >
+                <img src="./svg/github.svg" alt="GitHub Link" />
+              </a>
+              <a
+                href="https://dro-1.github.io/Gradient_Background/"
+                class="link"
+              >
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <p>Skills: HTML5, CSS3, Javascript, jQuery</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <h1>About Me</h1>
+
+        <div class="profile-image">
+          <img src="./img/dro1.jpeg" />
+        </div>
+
+        <article>
           <p>
-            I'm
-            <span>Seun Taiwo</span> AKA <span>Dro</span>
+            I always knew I wanted to be in tech since I was a child, hence tech
+            world, here I am. I enjoy front end majorly because people get to
+            see my work. There's the added advantage of battling with CSS on a
+            daily basis😄. Asides tech, I love food ( don't like cooking though
+            ), good music ( according to me ), soccer and video games. Have
+            something for me? Hit me up😎
           </p>
-          <p>I'm a Front End Web Developer</p>
+        </article>
+      </section>
+
+      <section class="contact">
+        <div class="links-container">
+          <h2>You wanna reach me?</h2>
           <div class="socials">
             <a href="https://twitter.com/the_dro_">
               <img src="./svg/twitter.svg" />
@@ -50,165 +213,56 @@
             <a href="https://github.com/dro-1">
               <img src="./svg/github.svg" />
             </a>
-            <a href="https://www.linkedin.com/in/oluwaseunbabara-taiwo-53731314a">
+            <a
+              href="https://www.linkedin.com/in/oluwaseunbabara-taiwo-53731314a"
+            >
               <img src="./svg/linkedin.svg" />
             </a>
           </div>
-          <button class="project-btn">See My Projects</button>
         </div>
-      </div>
-    </main>
+        <div class="separate">or</div>
+        <form>
+          <header>Shoot me an email 🤙</header>
+          <input class="name" type="text" placeholder="Full Name" />
+          <input class="email" type="text" placeholder="Email Address" />
+          <textarea placeholder="Your Message"></textarea>
+          <button class="submit-btn">Send It</button>
+        </form>
+        <footer>
+          <p>Copyright &copy;2020 | Made by theDro💖</p>
+        </footer>
+      </section>
+    </div>
 
-    <section id="project" class="projects">
-      <div id="project1" style="
-            background-image: linear-gradient(
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-              ),
-              url(img/fr.png);
-          " class="project">
-        <div class="extras">
-          <p class='title'>Face Recog</p>
-          <div class="links">
-            <a href="https://github.com/dro-1/FaceRecog" class="link">
-              <img src="./svg/github.svg" alt="GitHub Link" />
-            </a>
-            <a href="http://face-recog-1.herokuapp.com/" class="link">
-              <img src="./svg/connection.svg" alt="Live Link" />
-            </a>
-          </div>
-          <p>
-            Skills: HTML5, CSS3, Javascript, React, Node, Express, PostgreSQL,
-            Heroku
-          </p>
-        </div>
-      </div>
-      <div id="project2" style="
-            background-image: linear-gradient(
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-              ),
-              url(img/trunc.png);
-          " class="project">
-        <div class="extras">
-          <p class='title'>URL Shortener</p>
-          <div class="links">
-            <a href="https://github.com/dro-1/URL-Shortener" class="link">
-              <img src="./svg/github.svg" alt="GitHub Link" />
-            </a>
-            <a href="http://www.trunc.live" class="link">
-              <img src="./svg/connection.svg" alt="Live Link" />
-            </a>
-          </div>
-          <p>Skills: HTML5, CSS3, Javascript, Node, Express, MongoDB</p>
-        </div>
-      </div>
-
-      <div id="project3" style="
-            background-image: linear-gradient(
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-              ),
-              url(img/trans4mers.png);
-          " class="project">
-        <div class="extras">
-          <p class='title'>Trans4mers</p>
-          <div class="links">
-            <a href="https://github.com/dro-1/trans4mers" class="link">
-              <img src="./svg/github.svg" alt="GitHub Link" />
-            </a>
-            <a href="https://trans4mers.netlify.app/" class="link">
-              <img src="./svg/connection.svg" alt="Live Link" />
-            </a>
-          </div>
-          <p>Skills: HTML5, CSS3, Javascript, React</p>
-        </div>
-      </div>
-
-      <div id="project4" style="
-            background-image: linear-gradient(
-                rgba(0, 0, 0, 0.5),
-                rgba(0, 0, 0, 0.5)
-              ),
-              url(img/bg.png);
-          " class="project">
-        <div class="extras">
-          <p class='title'>Gradient Generator</p>
-          <div class="links">
-            <a href="https://github.com/dro-1/dro-1.github.io/tree/master/Gradient_Background" class="link">
-              <img src="./svg/github.svg" alt="GitHub Link" />
-            </a>
-            <a href="https://dro-1.github.io/Gradient_Background/" class="link">
-              <img src="./svg/connection.svg" alt="Live Link" />
-            </a>
-          </div>
-          <p>Skills: HTML5, CSS3, Javascript, jQuery</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="profile-image">
-        <img src="./img/dro1.jpeg" />
-      </div>
-      <h1>About Me</h1>
-
-      <article>
-        <p>
-          I always knew I wanted to be in tech since I was a child, hence Tech
-          World, Here I Am. I am a front end developer with a knack for
-          building fully responsive websites. I've gotten my hands into
-          Unity3D and BackEnd Development but I still have a long way to go
-          especially in Design.
-        </p>
-      </article>
-    </section>
-
-    <section class="contact">
-      <div class="links-container">
-        <h2>You wanna reach me?</h2>
-        <div class="socials">
-          <a href="https://twitter.com/the_dro_">
-            <img src="./svg/twitter.svg" />
-          </a>
-          <a href="https://github.com/dro-1">
-            <img src="./svg/github.svg" />
-          </a>
-          <a href="https://www.linkedin.com/in/oluwaseunbabara-taiwo-53731314a">
-            <img src="./svg/linkedin.svg" />
-          </a>
-        </div>
-      </div>
-      <div class="separate">or</div>
-      <form>
-        <header>Shoot me an email 🤙</header>
-        <input class="name" type="text" placeholder="Full Name" />
-        <input class='email' type="text" placeholder="Email Address" />
-        <textarea placeholder="Your Message"></textarea>
-        <button class="submit-btn">Send It</button>
-      </form>
-      <footer>
-        <p>Copyright &copy;2020 | Made by theDro💖</p>
-      </footer>
-    </section>
-  </div>
-
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_I2Wd8AW5nAANFLfo4iWa7");
-    })();
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-    integrity="sha384-aeOf8PUQ30Impyyio8FDxFHefK/3nHBJWjuT1u1FnJHZU+ro9q9E9cXUzfWBk0kT" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
-    integrity="sha384-IqFDa6K9SJzsScnaQ67Y8rd0qD38ZdhpMnvvHT8HyIIo4zwrxa/YDL5edt/MmN8W" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
-    integrity="sha384-sEM5g9GXGkLDax3gEbZeFpE7MrdX065K5lKbueFlZ9eUTSIQaLs9Be4NGq/gQ54w" crossorigin="anonymous">
-  </script>
-  <script src="./script.js"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_I2Wd8AW5nAANFLfo4iWa7");
+      })();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha384-aeOf8PUQ30Impyyio8FDxFHefK/3nHBJWjuT1u1FnJHZU+ro9q9E9cXUzfWBk0kT"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"
+      integrity="sha384-Hpjz8qHVhZmpYew5sm9269Ac9c//65P9FFIq7WLSQ70raPK6xBoZWcNZW3VX6jHW"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+      integrity="sha384-IqFDa6K9SJzsScnaQ67Y8rd0qD38ZdhpMnvvHT8HyIIo4zwrxa/YDL5edt/MmN8W"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha384-sEM5g9GXGkLDax3gEbZeFpE7MrdX065K5lKbueFlZ9eUTSIQaLs9Be4NGq/gQ54w"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

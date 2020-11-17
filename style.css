@@ -105,9 +105,12 @@ main {
         font-size: 3.5rem;
         font-family: Poppins; }
       main .container .text p {
-        font-size: 2rem; }
+        font-size: 2rem;
+        display: inline-block; }
         main .container .text p span {
           font-weight: bolder; }
+      main .container .text span.typed-cursor {
+        font-size: 2rem; }
       main .container .text > button {
         display: inline-block;
         background-color: #222;
@@ -142,6 +145,7 @@ main {
       transform: translateX(-50%); }
       .projects .project .extras .links {
         width: 30%;
+        max-width: 200px;
         margin: 1rem auto;
         display: flex;
         justify-content: space-between; }
@@ -177,18 +181,10 @@ main {
     margin-top: 4rem; }
   .about article {
     font-family: Nunito, sans-serif; }
-    .about article h2 {
-      color: black;
-      font-size: 3rem;
-      margin-bottom: 2rem; }
-      .about article h2 span {
-        color: black; }
     .about article p {
       color: black;
       font-size: 2rem;
       text-align: left; }
-      .about article p span {
-        color: black; }
 
 .contact {
   background-color: #4158D0;
@@ -225,7 +221,7 @@ main {
         width: 3rem; }
   .contact form {
     margin-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 8rem;
     width: 100%; }
     .contact form header {
       font-size: 2rem;
@@ -279,7 +275,8 @@ main {
       bottom: 0;
       left: 0;
       background-color: rgba(0, 0, 0, 0.3);
-      width: 100%; }
+      width: 100%;
+      padding: 1rem; }
 
 @media screen and (min-width: 500px) {
   main .container {
@@ -330,10 +327,61 @@ main {
         font-size: 3.5rem; }
       main .container .text p {
         font-size: 2.5rem; }
+      main .container .text span.typed-cursor {
+        font-size: 2.5rem; }
       main .container .text > button {
         font-size: 2.5rem; }
       main .container .text .socials {
         margin-left: auto;
         margin-right: auto; }
         main .container .text .socials img {
-          width: 3.5rem; } }
+          width: 3.5rem; }
+  .about .profile-image {
+    width: 70%; }
+  .about article p {
+    font-size: 2.5rem; } }
+
+@media screen and (min-width: 800px) {
+  .about {
+    padding: 4rem 4rem 10rem; }
+    .about .profile-image {
+      width: 60%;
+      margin-bottom: 4rem; }
+    .about h1 {
+      margin-bottom: 6rem;
+      font-size: 4.5rem; }
+  .contact {
+    display: flex;
+    padding: 4rem;
+    justify-content: space-between;
+    align-items: center; }
+    .contact .links-container {
+      width: 30%; }
+    .contact form {
+      width: 55%; }
+    .contact .separate {
+      display: none; } }
+
+@media screen and (min-width: 900px) {
+  .about .profile-image {
+    width: 50%; } }
+
+@media screen and (min-width: 1000px) {
+  .about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto; }
+    .about .profile-image,
+    .about article {
+      display: inline-block;
+      width: 40%; }
+    .about h1 {
+      display: block;
+      width: 100%;
+      margin-bottom: 6rem; }
+    .about article p {
+      text-align: left; } }

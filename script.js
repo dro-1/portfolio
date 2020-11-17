@@ -12,6 +12,23 @@ document.querySelector(".project-btn").addEventListener("click", () => {
   gsap.to(window, { duration: 1, scrollTo: { y: ".projects" } });
 });
 
+var options = {
+  strings: [
+    "I'm <span>Seun Taiwo</span> AKA <span>Dro</span>",
+    "I'm a Front End Web Developer",
+    "I build fully responsive websites",
+    "I love Games😍",
+  ],
+  typeSpeed: 50,
+  backSpeed: 50,
+  backDelay: 1500,
+  cursorChar: "_",
+  smartBackspace: true,
+  loop: true,
+};
+
+var typed = new Typed("#mainText", options);
+
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
   var templateParams = {
