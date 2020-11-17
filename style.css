@@ -278,6 +278,18 @@ main {
       width: 100%;
       padding: 1rem; }
 
+p.error,
+p.success {
+  display: none;
+  margin-top: 1rem;
+  font-size: 1.4rem; }
+
+p.error {
+  color: red; }
+
+p.success {
+  color: white; }
+
 @media screen and (min-width: 500px) {
   main .container {
     width: 100%; }

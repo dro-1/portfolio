@@ -40,9 +40,17 @@ submitBtn.addEventListener("click", (e) => {
   emailjs.send("contact_service", "contact_template", templateParams).then(
     function (response) {
       console.log("SUCCESS!", response.status, response.text);
+      document.querySelector("p.success").style.display = "block";
+      setTimeout(() => {
+        document.querySelector("p.success").style.display = "none";
+      }, 5000);
     },
     function (error) {
       console.log("FAILED...", error);
+      document.querySelector("p.error").style.display = "block";
+      setTimeout(() => {
+        document.querySelector("p.error").style.display = "none";
+      }, 5000);
     }
   );
 });
