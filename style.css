@@ -323,12 +323,14 @@ main {
       padding: 1rem; }
 
 p.error,
-p.success {
+p.success,
+p.empty {
   display: none;
   margin-top: 1rem;
   font-size: 1.4rem; }
 
-p.error {
+p.error,
+p.empty {
   color: red; }
 
 p.success {

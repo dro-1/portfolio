@@ -180,20 +180,6 @@ main {
   transform: translateX(-50%);
 }
 
-// Letter 0 is 157.4748077392578
-// VM945:3 Letter 1 is 238.8839874267578
-// VM945:3 Letter 2 is 257.6304016113281
-// VM945:3 Letter 3 is 285.7886962890625
-// VM945:3 Letter 4 is 123.01222229003906
-// VM945:3 Letter 5 is 216.8863525390625
-// VM945:3 Letter 6 is 157.4748077392578
-// VM945:3 Letter 7 is 238.8839874267578
-// VM945:3 Letter 8 is 257.6304016113281
-// VM945:3 Letter 9 is 285.7886962890625
-// VM945:3 Letter 10 is 123.01222229003906
-// VM945:3 Letter 11 is 216.8863525390625
-// undefined
-
 #dro-svg path:nth-child(1) {
   stroke-dasharray: 158;
   stroke-dashoffset: 158;
@@ -471,19 +457,23 @@ main {
 
 
 p.error,
-p.success {
+p.success,
+p.empty {
   display: none;
   margin-top: 1rem;
   font-size: 1.4rem;
 }
 
-p.error {
+p.error,
+p.empty {
   color: red;
 }
 
 p.success {
   color: white
 }
+
+
 
 @media screen and (min-width: 500px) {
   main {
