@@ -93,6 +93,7 @@ body {
 
 main {
   background-color: rgb(10, 3, 3);
+  position: relative;
 
   .container {
     min-height: 100vh;
@@ -172,31 +173,56 @@ main {
   }
 }
 
-#dro-svg {}
+#dro-svg {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-#dro-svg path:nth-child(1) {}
+// Letter 0 is 157.4748077392578
+// VM945:3 Letter 1 is 238.8839874267578
+// VM945:3 Letter 2 is 257.6304016113281
+// VM945:3 Letter 3 is 285.7886962890625
+// VM945:3 Letter 4 is 123.01222229003906
+// VM945:3 Letter 5 is 216.8863525390625
+// VM945:3 Letter 6 is 157.4748077392578
+// VM945:3 Letter 7 is 238.8839874267578
+// VM945:3 Letter 8 is 257.6304016113281
+// VM945:3 Letter 9 is 285.7886962890625
+// VM945:3 Letter 10 is 123.01222229003906
+// VM945:3 Letter 11 is 216.8863525390625
+// undefined
 
-#dro-svg path:nth-child(2) {}
+#dro-svg path:nth-child(1) {
+  stroke-dasharray: 158;
+  stroke-dashoffset: 158;
+}
 
-#dro-svg path:nth-child(3) {}
+#dro-svg path:nth-child(2) {
+  stroke-dasharray: 239;
+  stroke-dashoffset: 239;
+}
 
-#dro-svg path:nth-child(4) {}
+#dro-svg path:nth-child(3) {
+  stroke-dasharray: 258;
+  stroke-dashoffset: 258;
+}
 
-#dro-svg path:nth-child(5) {}
+#dro-svg path:nth-child(4) {
+  stroke-dasharray: 286;
+  stroke-dashoffset: 286;
+}
 
-#dro-svg path:nth-child(6) {}
+#dro-svg path:nth-child(5) {
+  stroke-dasharray: 124;
+  stroke-dashoffset: 124;
+}
 
-#dro-svg path:nth-child(7) {}
-
-#dro-svg path:nth-child(8) {}
-
-#dro-svg path:nth-child(9) {}
-
-#dro-svg path:nth-child(10) {}
-
-#dro-svg path:nth-child(11) {}
-
-#dro-svg path:nth-child(12) {}
+#dro-svg path:nth-child(6) {
+  stroke-dasharray: 217;
+  stroke-dashoffset: 217;
+}
 
 .projects {
   background-color: #fff;

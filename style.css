@@ -67,7 +67,8 @@ body {
         color: #f18e0b; }
 
 main {
-  background-color: #0a0303; }
+  background-color: #0a0303;
+  position: relative; }
   main .container {
     min-height: 100vh; }
     main .container .my-image {
@@ -121,6 +122,36 @@ main {
         font-family: Poppins;
         font-size: 2rem;
         text-decoration: none; }
+
+#dro-svg {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+#dro-svg path:nth-child(1) {
+  stroke-dasharray: 158;
+  stroke-dashoffset: 158; }
+
+#dro-svg path:nth-child(2) {
+  stroke-dasharray: 239;
+  stroke-dashoffset: 239; }
+
+#dro-svg path:nth-child(3) {
+  stroke-dasharray: 258;
+  stroke-dashoffset: 258; }
+
+#dro-svg path:nth-child(4) {
+  stroke-dasharray: 286;
+  stroke-dashoffset: 286; }
+
+#dro-svg path:nth-child(5) {
+  stroke-dasharray: 124;
+  stroke-dashoffset: 124; }
+
+#dro-svg path:nth-child(6) {
+  stroke-dasharray: 217;
+  stroke-dashoffset: 217; }
 
 .projects {
   background-color: #fff;

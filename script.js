@@ -8,29 +8,12 @@ const projectArr = gsap.utils.toArray(".projects .project");
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
-// var tl = gsap.timeline();
-//   tl.to("div.overlay", {
-//     duration: 1,
-//     scale: 10,
-//     opacity: 1,
-//   });
-//   tl.to("#project-svg path", {
-//     duration: 1,
-//     strokeDashoffset: 0,
-//     fill: "white",
-//     stagger: 0.3,
-//   });
-//   tl.to("#project-svg", {
-//     opacity: 0,
-//   });
-//   tl.to("div.overlay", {
-//     duration: 0.5,
-//     scale: 1,
-//     delay: 0.1,
-//   });
-//   tl.to("div.overlay", {
-//     opacity: 0,
-//   });
+gsap.to("#dro-svg path", {
+  duration: 1,
+  strokeDashoffset: 0,
+  fill: "white",
+  stagger: 0.3,
+});
 
 document.querySelector(".project-btn").addEventListener("click", () => {
   gsap.to(window, { duration: 1, scrollTo: { y: ".projects" } });
