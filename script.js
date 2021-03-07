@@ -4,6 +4,10 @@ let emailInput = document.querySelector("input.email");
 let message = document.querySelector("textarea");
 let submitBtn = document.querySelector("button.submit-btn");
 const projectArr = gsap.utils.toArray(".projects .project");
+let footerNote = document.querySelector("footer > p");
+
+const currentYear = new Date().getFullYear();
+footerNote.innerHTML = `Copyright &copy;${currentYear} | Made by theDro💖`;
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
