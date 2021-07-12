@@ -26,7 +26,8 @@ document.querySelector(".project-btn").addEventListener("click", () => {
 var options = {
   strings: [
     "I'm <span>Seun Taiwo</span> AKA <span>Dro</span>",
-    "I'm a Front End Web Developer",
+    "I'm a Full Stack Web Developer",
+    "I'm a Mobile App Developer",
     "I build fully responsive websites",
     "I love Games😍",
   ],
