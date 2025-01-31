@@ -106,7 +106,7 @@ main {
       transform: translateX(-50%);
       margin-left: 1rem;
 
-      &>img {
+      & > img {
         width: 20rem;
         height: 20rem;
         border-radius: 1rem;
@@ -126,7 +126,7 @@ main {
     }
 
     .socials {
-      width: 130px;
+      width: 180px;
       margin-top: 2rem;
       display: flex;
       justify-content: space-between;
@@ -158,7 +158,7 @@ main {
         font-size: 2rem;
       }
 
-      &>button {
+      & > button {
         display: inline-block;
         background-color: #222;
         color: #fff;
@@ -229,7 +229,7 @@ main {
     background-color: #b2abe0;
     box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.3);
 
-    &>img {
+    & > img {
       width: 100%;
       height: 20rem;
     }
@@ -268,6 +268,7 @@ main {
         justify-content: space-between;
 
         a {
+          margin: 0 auto;
           img {
             width: 3rem;
             height: 3rem;
@@ -328,8 +329,13 @@ main {
 }
 
 .contact {
-  background-color: #4158D0;
-  background-image: linear-gradient(315deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    315deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
 
   background-size: 400% 400%;
   padding: 2rem;
@@ -443,7 +449,6 @@ main {
     font-family: Nunito, sans-serif;
     text-align: center;
 
-
     p {
       position: absolute;
       bottom: 0;
@@ -454,7 +459,6 @@ main {
     }
   }
 }
-
 
 p.error,
 p.success,
@@ -470,10 +474,8 @@ p.empty {
 }
 
 p.success {
-  color: white
+  color: white;
 }
-
-
 
 @media screen and (min-width: 500px) {
   main {
@@ -496,22 +498,22 @@ p.success {
       width: 100%;
       padding-top: 15rem;
       position: relative;
-      background-image:
-        linear-gradient(rgba(0, 0, 0, 0.45),
-          rgba(0, 0, 0, 0.45)),
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.45),
+          rgba(0, 0, 0, 0.45)
+        ),
         url(./img/dro2.jpg);
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
 
       .my-image {
-
         display: none;
         position: static;
         left: auto;
         transform: translateX(0);
 
-        &>img {
+        & > img {
           width: 20rem;
           height: 20rem;
           border-radius: 1rem;
@@ -551,7 +553,7 @@ p.success {
           font-size: 2.5rem;
         }
 
-        &>button {
+        & > button {
           font-size: 2.5rem;
         }
 
@@ -578,8 +580,6 @@ p.success {
       }
     }
   }
-
-
 }
 
 @media screen and (min-width: 800px) {
@@ -614,13 +614,11 @@ p.success {
     .separate {
       display: none;
     }
-
   }
 }
 
 @media screen and (min-width: 900px) {
   .about {
-
     .profile-image {
       width: 50%;
     }
