@@ -1,84 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Raleway|Poppins|Nunito"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>theDro😉</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway|Galada|Poppins" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>theDro.</title>
-</head>
+  <body>
+    <div class="inner-wrapper">
+      <!-- <nav class="navigation">
+        <div class="mobile-nav">
+          <ul class="menu">
+            <img class="cancel" src="./svg/cancel.svg" alt="exit" />
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="menu-btn">
+        <img src="./svg/menu.svg" alt="menu" />
+      </div> -->
 
-<body data-barba='wrapper'>
-  <div class='inner-wrapper'>
-    <nav class="navigation">
-      <div class="mobile-nav">
-        <ul class="menu">
-          <img class="cancel" src="./svg/cancel.svg" alt="exit" />
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/about.html">About</a></li>
-        </ul>
-      </div>
-    </nav>
-    <svg id="project-svg" width="583" height="162" viewBox="0 0 583 162" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M74.45 45.05C74.45 53.75 71.45 61 65.45 66.8C59.55 72.5 50.5 75.35 38.3 75.35H18.2V119H4.55V14.45H38.3C50.1 14.45 59.05 17.3 65.15 23C71.35 28.7 74.45 36.05 74.45 45.05ZM38.3 64.1C45.9 64.1 51.5 62.45 55.1 59.15C58.7 55.85 60.5 51.15 60.5 45.05C60.5 32.15 53.1 25.7 38.3 25.7H18.2V64.1H38.3Z"
-        stroke="white" stroke-width="8" mask="url(#path-1-outside-1)" />
-      <path
-        d="M105.065 50.15C107.465 45.45 110.865 41.8 115.265 39.2C119.765 36.6 125.215 35.3 131.615 35.3V49.4H128.015C112.715 49.4 105.065 57.7 105.065 74.3V119H91.4152V36.8H105.065V50.15Z"
-        stroke="white" stroke-width="8" mask="url(#path-1-outside-1)" />
-      <path
-        d="M183.222 120.35C175.522 120.35 168.522 118.6 162.222 115.1C156.022 111.6 151.122 106.65 147.522 100.25C144.022 93.75 142.272 86.25 142.272 77.75C142.272 69.35 144.072 61.95 147.672 55.55C151.372 49.05 156.372 44.1 162.672 40.7C168.972 37.2 176.022 35.45 183.822 35.45C191.622 35.45 198.672 37.2 204.972 40.7C211.272 44.1 216.222 49 219.822 55.4C223.522 61.8 225.372 69.25 225.372 77.75C225.372 86.25 223.472 93.75 219.672 100.25C215.972 106.65 210.922 111.6 204.522 115.1C198.122 118.6 191.022 120.35 183.222 120.35ZM183.222 108.35C188.122 108.35 192.722 107.2 197.022 104.9C201.322 102.6 204.772 99.15 207.372 94.55C210.072 89.95 211.422 84.35 211.422 77.75C211.422 71.15 210.122 65.55 207.522 60.95C204.922 56.35 201.522 52.95 197.322 50.75C193.122 48.45 188.572 47.3 183.672 47.3C178.672 47.3 174.072 48.45 169.872 50.75C165.772 52.95 162.472 56.35 159.972 60.95C157.472 65.55 156.222 71.15 156.222 77.75C156.222 84.45 157.422 90.1 159.822 94.7C162.322 99.3 165.622 102.75 169.722 105.05C173.822 107.25 178.322 108.35 183.222 108.35Z"
-        stroke="white" stroke-width="8" mask="url(#path-1-outside-1)" />
-      <path
-        d="M250.67 23.45C248.07 23.45 245.87 22.55 244.07 20.75C242.37 18.95 241.52 16.75 241.52 14.15C241.52 11.55 242.37 9.34999 244.07 7.54999C245.87 5.74999 248.07 4.84999 250.67 4.84999C253.27 4.84999 255.42 5.74999 257.12 7.54999C258.92 9.34999 259.82 11.55 259.82 14.15C259.82 16.75 258.92 18.95 257.12 20.75C255.42 22.55 253.27 23.45 250.67 23.45ZM257.42 136.85C257.42 144.15 255.57 149.5 251.87 152.9C248.17 156.3 242.77 158 235.67 158H227.72V146.45H233.42C237.22 146.45 239.87 145.7 241.37 144.2C242.97 142.7 243.77 140.15 243.77 136.55V36.8H257.42V136.85Z"
-        stroke="white" stroke-width="8" mask="url(#path-1-outside-1)" />
-      <path
-        d="M355.527 74.75C355.527 77.35 355.377 80.1 355.077 83H289.377C289.877 91.1 292.627 97.45 297.627 102.05C302.727 106.55 308.877 108.8 316.077 108.8C321.977 108.8 326.877 107.45 330.777 104.75C334.777 101.95 337.577 98.25 339.177 93.65H353.877C351.677 101.55 347.277 108 340.677 113C334.077 117.9 325.877 120.35 316.077 120.35C308.277 120.35 301.277 118.6 295.077 115.1C288.977 111.6 284.177 106.65 280.677 100.25C277.177 93.75 275.427 86.25 275.427 77.75C275.427 69.25 277.127 61.8 280.527 55.4C283.927 49 288.677 44.1 294.777 40.7C300.977 37.2 308.077 35.45 316.077 35.45C323.877 35.45 330.777 37.15 336.777 40.55C342.777 43.95 347.377 48.65 350.577 54.65C353.877 60.55 355.527 67.25 355.527 74.75ZM341.427 71.9C341.427 66.7 340.277 62.25 337.977 58.55C335.677 54.75 332.527 51.9 328.527 50C324.627 48 320.277 47 315.477 47C308.577 47 302.677 49.2 297.777 53.6C292.977 58 290.227 64.1 289.527 71.9H341.427Z"
-        stroke="white" stroke-width="8" mask="url(#path-1-outside-1)" />
-      <path
-        d="M368.444 77.75C368.444 69.25 370.144 61.85 373.544 55.55C376.944 49.15 381.644 44.2 387.644 40.7C393.744 37.2 400.694 35.45 408.494 35.45C418.594 35.45 426.894 37.9 433.394 42.8C439.994 47.7 444.344 54.5 446.444 63.2H431.744C430.344 58.2 427.594 54.25 423.494 51.35C419.494 48.45 414.494 47 408.494 47C400.694 47 394.394 49.7 389.594 55.1C384.794 60.4 382.394 67.95 382.394 77.75C382.394 87.65 384.794 95.3 389.594 100.7C394.394 106.1 400.694 108.8 408.494 108.8C414.494 108.8 419.494 107.4 423.494 104.6C427.494 101.8 430.244 97.8 431.744 92.6H446.444C444.244 101 439.844 107.75 433.244 112.85C426.644 117.85 418.394 120.35 408.494 120.35C400.694 120.35 393.744 118.6 387.644 115.1C381.644 111.6 376.944 106.65 373.544 100.25C370.144 93.85 368.444 86.35 368.444 77.75Z"
-        stroke="white" stroke-width="8" mask="url(#path-1-outside-1)" />
-      <path
-        d="M481.307 48.05V96.5C481.307 100.5 482.157 103.35 483.857 105.05C485.557 106.65 488.507 107.45 492.707 107.45H502.757V119H490.457C482.857 119 477.157 117.25 473.357 113.75C469.557 110.25 467.657 104.5 467.657 96.5V48.05H457.007V36.8H467.657V16.1H481.307V36.8H502.757V48.05H481.307Z"
-        stroke="white" stroke-width="8" mask="url(#path-1-outside-1)" />
-      <path
-        d="M548.396 120.35C542.096 120.35 536.446 119.3 531.446 117.2C526.446 115 522.496 112 519.596 108.2C516.696 104.3 515.096 99.85 514.796 94.85H528.896C529.296 98.95 531.196 102.3 534.596 104.9C538.096 107.5 542.646 108.8 548.246 108.8C553.446 108.8 557.546 107.65 560.546 105.35C563.546 103.05 565.046 100.15 565.046 96.65C565.046 93.05 563.446 90.4 560.246 88.7C557.046 86.9 552.096 85.15 545.396 83.45C539.296 81.85 534.296 80.25 530.396 78.65C526.596 76.95 523.296 74.5 520.496 71.3C517.796 68 516.446 63.7 516.446 58.4C516.446 54.2 517.696 50.35 520.196 46.85C522.696 43.35 526.246 40.6 530.846 38.6C535.446 36.5 540.696 35.45 546.596 35.45C555.696 35.45 563.046 37.75 568.646 42.35C574.246 46.95 577.246 53.25 577.646 61.25H563.996C563.696 56.95 561.946 53.5 558.746 50.9C555.646 48.3 551.446 47 546.146 47C541.246 47 537.346 48.05 534.446 50.15C531.546 52.25 530.096 55 530.096 58.4C530.096 61.1 530.946 63.35 532.646 65.15C534.446 66.85 536.646 68.25 539.246 69.35C541.946 70.35 545.646 71.5 550.346 72.8C556.246 74.4 561.046 76 564.746 77.6C568.446 79.1 571.596 81.4 574.196 84.5C576.896 87.6 578.296 91.65 578.396 96.65C578.396 101.15 577.146 105.2 574.646 108.8C572.146 112.4 568.596 115.25 563.996 117.35C559.496 119.35 554.296 120.35 548.396 120.35Z"
-        stroke="white" stroke-width="8" mask="url(#path-1-outside-1)" />
-    </svg>
-    <div class="overlay">
-    </div>
-    <ul class="overlay-box">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div class="menu-btn">
-      <img src="./svg/menu.svg" alt="menu" />
-    </div>
+      <main>
+        <div class="container">
+          <svg
+            id="dro-svg"
+            width="241"
+            height="59"
+            viewBox="0 0 241 59"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.536 21.944V45.2C14.536 47.12 14.944 48.488 15.76 49.304C16.576 50.072 17.992 50.456 20.008 50.456H24.832V56H18.928C15.28 56 12.544 55.16 10.72 53.48C8.896 51.8 7.984 49.04 7.984 45.2V21.944H2.872V16.544H7.984V6.608H14.536V16.544H24.832V21.944H14.536Z"
+              stroke="white"
+              stroke-width="2"
+              mask="url(#path-1-outside-1)"
+            />
+            <path
+              d="M52.3546 15.824C55.3306 15.824 58.0186 16.472 60.4186 17.768C62.8186 19.016 64.6906 20.912 66.0346 23.456C67.4266 26 68.1226 29.096 68.1226 32.744V56H61.6426V33.68C61.6426 29.744 60.6586 26.744 58.6906 24.68C56.7226 22.568 54.0346 21.512 50.6266 21.512C47.1706 21.512 44.4106 22.592 42.3466 24.752C40.3306 26.912 39.3226 30.056 39.3226 34.184V56H32.7706V2.72H39.3226V22.16C40.6186 20.144 42.3946 18.584 44.6506 17.48C46.9546 16.376 49.5226 15.824 52.3546 15.824Z"
+              stroke="white"
+              stroke-width="2"
+              mask="url(#path-1-outside-1)"
+            />
+            <path
+              d="M114.825 34.76C114.825 36.008 114.753 37.328 114.609 38.72H83.0732C83.3132 42.608 84.6332 45.656 87.0332 47.864C89.4812 50.024 92.4333 51.104 95.8893 51.104C98.7213 51.104 101.073 50.456 102.945 49.16C104.865 47.816 106.209 46.04 106.977 43.832H114.033C112.977 47.624 110.865 50.72 107.697 53.12C104.529 55.472 100.593 56.648 95.8893 56.648C92.1453 56.648 88.7853 55.808 85.8092 54.128C82.8812 52.448 80.5772 50.072 78.8972 47C77.2172 43.88 76.3773 40.28 76.3773 36.2C76.3773 32.12 77.1932 28.544 78.8252 25.472C80.4572 22.4 82.7373 20.048 85.6653 18.416C88.6413 16.736 92.0493 15.896 95.8893 15.896C99.6333 15.896 102.945 16.712 105.825 18.344C108.705 19.976 110.913 22.232 112.449 25.112C114.033 27.944 114.825 31.16 114.825 34.76ZM108.057 33.392C108.057 30.896 107.505 28.76 106.401 26.984C105.297 25.16 103.785 23.792 101.865 22.88C99.9932 21.92 97.9053 21.44 95.6012 21.44C92.2893 21.44 89.4572 22.496 87.1052 24.608C84.8012 26.72 83.4812 29.648 83.1452 33.392H108.057Z"
+              stroke="white"
+              stroke-width="2"
+              mask="url(#path-1-outside-1)"
+            />
+            <path
+              d="M139.098 5.816C144.57 5.816 149.298 6.848 153.282 8.912C157.314 10.928 160.386 13.832 162.498 17.624C164.658 21.416 165.738 25.88 165.738 31.016C165.738 36.152 164.658 40.616 162.498 44.408C160.386 48.152 157.314 51.032 153.282 53.048C149.298 55.016 144.57 56 139.098 56H123.474V5.816H139.098ZM139.098 50.6C145.578 50.6 150.522 48.896 153.93 45.488C157.338 42.032 159.042 37.208 159.042 31.016C159.042 24.776 157.314 19.904 153.858 16.4C150.45 12.896 145.53 11.144 139.098 11.144H130.026V50.6H139.098Z"
+              stroke="white"
+              stroke-width="2"
+              mask="url(#path-1-outside-1)"
+            />
+            <path
+              d="M180.932 22.952C182.084 20.696 183.716 18.944 185.828 17.696C187.988 16.448 190.604 15.824 193.676 15.824V22.592H191.948C184.604 22.592 180.932 26.576 180.932 34.544V56H174.38V16.544H180.932V22.952Z"
+              stroke="white"
+              stroke-width="2"
+              mask="url(#path-1-outside-1)"
+            />
+            <path
+              d="M218.447 56.648C214.751 56.648 211.391 55.808 208.367 54.128C205.391 52.448 203.039 50.072 201.311 47C199.631 43.88 198.791 40.28 198.791 36.2C198.791 32.168 199.655 28.616 201.383 25.544C203.159 22.424 205.559 20.048 208.583 18.416C211.607 16.736 214.991 15.896 218.735 15.896C222.479 15.896 225.863 16.736 228.887 18.416C231.911 20.048 234.287 22.4 236.015 25.472C237.791 28.544 238.679 32.12 238.679 36.2C238.679 40.28 237.767 43.88 235.943 47C234.167 50.072 231.743 52.448 228.671 54.128C225.599 55.808 222.191 56.648 218.447 56.648ZM218.447 50.888C220.799 50.888 223.007 50.336 225.071 49.232C227.135 48.128 228.791 46.472 230.039 44.264C231.335 42.056 231.983 39.368 231.983 36.2C231.983 33.032 231.359 30.344 230.111 28.136C228.863 25.928 227.231 24.296 225.215 23.24C223.199 22.136 221.015 21.584 218.663 21.584C216.263 21.584 214.055 22.136 212.039 23.24C210.071 24.296 208.487 25.928 207.287 28.136C206.087 30.344 205.487 33.032 205.487 36.2C205.487 39.416 206.063 42.128 207.215 44.336C208.415 46.544 209.999 48.2 211.967 49.304C213.935 50.36 216.095 50.888 218.447 50.888Z"
+              stroke="white"
+              stroke-width="2"
+              mask="url(#path-1-outside-1)"
+            />
+          </svg>
+          <div class="my-image">
+            <img src="./img/dro101.png" alt="Seun's Picture" />
+          </div>
 
-    <main data-barba="container" data-barba-namespace='home'>
-      <div class="container">
+          <div class="text">
+            <h1>Hello There 🖐</h1>
+            <p id="mainText"></p>
+            <div class="socials">
+              <a href="https://twitter.com/the_dro_">
+                <img src="./svg/twitter.svg" />
+              </a>
+              <a href="https://github.com/dro-1">
+                <img src="./svg/github.svg" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/oluwaseunbabara-taiwo-53731314a/"
+              >
+                <img src="./svg/linkedin.svg" />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/10RGqNuWtb0Y_Kaof9gdLiyaXBABzjkS7/view?usp=sharing"
+              >
+                <img src="./svg/document.svg" />
+              </a>
+            </div>
+            <button class="project-btn">See My Projects</button>
+          </div>
+        </div>
+      </main>
 
-        <div class="my-image">
-          <img src="./img/seun2.jpg" alt="Seun's Picture" />
+      <section id="project" class="projects">
+        <div
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/44bukaz.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">44Bukaz</p>
+            <div class="links">
+              <!-- <a href="https://github.com/dro-1/algo-visualiser" class="link">
+              <img src="./svg/github.svg" alt="GitHub Link" />
+            </a> -->
+              <a href="https://www.44bukaz.com/" class="link">
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <p>Skills: React, NextJS, Typescript, Tailwind, ContextAPI</p>
+            <span class="arrow">&darr;</span>
+          </div>
+        </div>
+        <div
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/algo-visual.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">Sorting Algorithm Visualiser</p>
+            <div class="links">
+              <a href="https://github.com/dro-1/algo-visualiser" class="link">
+                <img src="./svg/github.svg" alt="GitHub Link" />
+              </a>
+              <a href="https://algo-visual-dr.netlify.app/" class="link">
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <p>
+              Skills: React, Typescript, Tailwind, requestAnimationFrame, Data
+              Structures and Algorithms
+            </p>
+            <span class="arrow">&darr;</span>
+          </div>
         </div>
 
-        <div class="text">
-          <h1>Hello There</h1>
+        <div
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/tictacdro.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">TicTacDro</p>
+            <div class="links">
+              <a href="https://github.com/dro-1/tictactoe-fe" class="link">
+                <img src="./svg/github.svg" alt="GitHub Link" />
+              </a>
+              <a href="https://tictacdro.netlify.app/" class="link">
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <span class="arrow">&darr;</span>
+            <p>
+              Skills: React, Flask, SQLite, SocketIO, Typescript, Tailwind,
+              ContextAPI
+            </p>
+          </div>
+        </div>
+
+        <div
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/path-anim.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">Path Animation</p>
+            <div class="links">
+              <!-- <a href="https://github.com/dro-1/tictactoe-fe" class="link">
+                <img src="./svg/github.svg" alt="GitHub Link" />
+              </a> -->
+              <a href="https://dro-path-anim.netlify.app/" class="link">
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <p>Skills: React, HTMLCanvas, requestAnimationFrame</p>
+            <span class="arrow">&darr;</span>
+          </div>
+        </div>
+        <div
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),
+              url(img/flaskcon.png);
+          "
+          class="project"
+        >
+          <div class="extras">
+            <p class="title">FlaskCon Africa 2024</p>
+            <div class="links">
+              <!-- <a href="https://github.com/dro-1/tictactoe-fe" class="link">
+              <img src="./svg/github.svg" alt="GitHub Link" />
+            </a> -->
+              <a href="https://flaskcon.com.ng/" class="link">
+                <img src="./svg/connection.svg" alt="Live Link" />
+              </a>
+            </div>
+            <p>Skills: React, Framer Motion, GSAP</p>
+            <span class="arrow">&darr;</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <h1>About Me</h1>
+
+        <div class="profile-image">
+          <img src="./img/dro102.jpg" />
+        </div>
+
+        <article>
           <p>
-            I'm
-            <span>Seun Taiwo,</span>
+            I always knew I wanted to be in tech since I was a child, hence tech
+            world, here I am. I enjoy front end majorly because people get to
+            see my work. There's the added advantage of battling with CSS on a
+            daily basis😄. Asides tech, I love food ( don't like cooking though
+            ), good music ( according to me ), soccer and video games. Have
+            something for me? Hit me up😎
           </p>
-          <p>
-            you can call me
-            <span>Dro.</span>
-          </p>
-          <p>I'm a Front End Web Developer</p>
+        </article>
+      </section>
+
+      <section class="contact">
+        <div class="links-container">
+          <h2>You wanna reach me?</h2>
           <div class="socials">
             <a href="https://twitter.com/the_dro_">
               <img src="./svg/twitter.svg" />
@@ -86,33 +284,59 @@
             <a href="https://github.com/dro-1">
               <img src="./svg/github.svg" />
             </a>
-            <a href="https://www.linkedin.com/in/oluwaseunbabara-taiwo-53731314a">
+            <a
+              href="https://www.linkedin.com/in/oluwaseunbabara-taiwo-53731314a/"
+            >
               <img src="./svg/linkedin.svg" />
             </a>
           </div>
-          <a href='/projects.html' class="project-btn">See My Projects</a>
         </div>
-      </div>
-    </main>
-  </div>
+        <div class="separate">or</div>
+        <form>
+          <header>Shoot me an email 🤙</header>
+          <input class="name" type="text" placeholder="Full Name" />
+          <input class="email" type="text" placeholder="Email Address" />
+          <textarea placeholder="Your Message"></textarea>
+          <button class="submit-btn">Send It</button>
+          <p class="empty">* All fields must be filled</p>
+          <p class="error">* An error occurred while sending</p>
+          <p class="success">* Your message has been sent succesfully</p>
+        </form>
+        <footer>
+          <p></p>
+        </footer>
+      </section>
+    </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-    integrity="sha384-aeOf8PUQ30Impyyio8FDxFHefK/3nHBJWjuT1u1FnJHZU+ro9q9E9cXUzfWBk0kT" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
-    integrity="sha384-sEM5g9GXGkLDax3gEbZeFpE7MrdX065K5lKbueFlZ9eUTSIQaLs9Be4NGq/gQ54w" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
-    integrity="sha384-IqFDa6K9SJzsScnaQ67Y8rd0qD38ZdhpMnvvHT8HyIIo4zwrxa/YDL5edt/MmN8W" crossorigin="anonymous">
-  </script>
-
-  <script src="https://unpkg.com/@barba/core"
-    integrity="sha384-sijvFrapGyCJSjfjNjjA9r6pP/4fj3yhYvRQ1VUPZ5h6hcxs1o4DM7G7LayM337a" crossorigin="anonymous">
-  </script>
-
-  <script src="./script.js"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_I2Wd8AW5nAANFLfo4iWa7");
+      })();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha384-aeOf8PUQ30Impyyio8FDxFHefK/3nHBJWjuT1u1FnJHZU+ro9q9E9cXUzfWBk0kT"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"
+      integrity="sha384-Hpjz8qHVhZmpYew5sm9269Ac9c//65P9FFIq7WLSQ70raPK6xBoZWcNZW3VX6jHW"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+      integrity="sha384-IqFDa6K9SJzsScnaQ67Y8rd0qD38ZdhpMnvvHT8HyIIo4zwrxa/YDL5edt/MmN8W"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+      integrity="sha384-sEM5g9GXGkLDax3gEbZeFpE7MrdX065K5lKbueFlZ9eUTSIQaLs9Be4NGq/gQ54w"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

@@ -1,98 +1,93 @@
-let hamButton = document.querySelector(".menu-btn");
-let cancelButton = document.querySelector(".cancel");
-let menu = document.querySelector(".menu");
+let sections = document.querySelectorAll(".projects .project").length;
+let nameInput = document.querySelector("input.name");
+let emailInput = document.querySelector("input.email");
+let message = document.querySelector("textarea");
+let submitBtn = document.querySelector("button.submit-btn");
+const projectArr = gsap.utils.toArray(".projects .project");
+let footerNote = document.querySelector("footer > p");
 
-function pageTransitionHome() {
-  var tl = gsap.timeline();
-  tl.to("div.overlay", {
-    duration: 1,
-    scale: 10,
-    opacity: 1,
-  });
-  tl.to("#project-svg path", {
-    duration: 1,
-    strokeDashoffset: 0,
-    fill: "white",
-    stagger: 0.3,
-  });
-  tl.to("#project-svg", {
-    opacity: 0,
-  });
-  tl.to("div.overlay", {
-    duration: 0.5,
-    scale: 1,
-    delay: 0.1,
-  });
-  tl.to("div.overlay", {
-    opacity: 0,
-  });
-}
+const currentYear = new Date().getFullYear();
+footerNote.innerHTML = `Copyright &copy;${currentYear} | Made by theDro💖`;
 
-function pageTransitionProjects() {
-  var tl = gsap.timeline();
-  tl.to("ul.overlay-box li", {
-    duration: 0.5,
-    scaleY: 1,
-    transformOrigin: "bottom left",
-    stagger: 0.2,
-  });
-  tl.to("ul.overlay-box li", {
-    duration: 0.5,
-    scaleY: 0,
-    transformOrigin: "bottom left",
-    stagger: 0.2,
-    delay: 0.1,
-  });
-}
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
 
-function delay(n) {
-  return new Promise((done) => {
+gsap.to("#dro-svg path", {
+  duration: 1,
+  strokeDashoffset: 0,
+  fill: "white",
+  stagger: 0.3,
+});
+
+document.querySelector(".project-btn").addEventListener("click", () => {
+  gsap.to(window, { duration: 1, scrollTo: { y: ".projects" } });
+});
+
+var options = {
+  strings: [
+    "I'm <span>Seun Taiwo</span> AKA <span>Dro</span>",
+    "I'm a Full Stack Web Developer",
+    "I'm a Mobile App Developer",
+    "I build fully responsive websites",
+    "I love Games😍",
+  ],
+  typeSpeed: 50,
+  backSpeed: 50,
+  backDelay: 1500,
+  cursorChar: "_",
+  smartBackspace: true,
+  loop: true,
+};
+
+var typed = new Typed("#mainText", options);
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  var templateParams = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: message.value,
+  };
+
+  if (templateParams.name && templateParams.email && templateParams.message) {
+    emailjs.send("contact_service", "contact_template", templateParams).then(
+      function (response) {
+        document.querySelector("p.success").style.display = "block";
+        setTimeout(() => {
+          document.querySelector("p.success").style.display = "none";
+        }, 5000);
+      },
+      function (error) {
+        document.querySelector("p.error").style.display = "block";
+        setTimeout(() => {
+          document.querySelector("p.error").style.display = "none";
+        }, 5000);
+      }
+    );
+  } else {
+    document.querySelector("p.empty").style.display = "block";
     setTimeout(() => {
-      done();
-    }, n);
+      document.querySelector("p.empty").style.display = "none";
+    }, 5000);
+  }
+});
+
+projectArr.map((project, index) => {
+  if (index === projectArr.length - 1) {
+    return ScrollTrigger.create({
+      trigger: project,
+      start: "top top",
+    });
+  }
+  ScrollTrigger.create({
+    trigger: project,
+    start: "top top",
+    snap: {
+      snapTo: 1,
+      duration: 1,
+      delay: 0.05,
+    },
+    pin: true,
+    pinSpacing: false,
   });
-}
-
-barba.init({
-  sync: true,
-  views: [
-    {
-      namespace: "home",
-      async beforeLeave(data) {
-        const done = this.async();
-        pageTransitionHome();
-        await delay(1000);
-        done();
-      },
-      async beforeEnter(data) {},
-    },
-    {
-      namespace: "projects",
-      async beforeLeave(data) {
-        const done = this.async();
-        pageTransitionProjects();
-        await delay(1500);
-        done();
-      },
-      async beforeEnter(data) {},
-    },
-  ],
-  transitions: [
-    {
-      async leave(data) {
-        // const done = this.async();
-        // pageTransition();
-        // await delay(1500);
-        // done();
-      },
-      async enter(data) {},
-    },
-  ],
-});
-
-hamButton.addEventListener("click", () => {
-  menu.classList.add("display");
-});
-cancelButton.addEventListener("click", () => {
-  menu.classList.remove("display");
 });
